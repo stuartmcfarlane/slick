@@ -6,9 +6,8 @@
 |___/_|_|\___|_|\_(_)/ |___/
                    |__/
 
- Version: 1.6.0+
+ Version: 1.6.0
   Author: Ken Wheeler
-        : Stuart McFarlane
  Website: http://kenwheeler.github.io
     Docs: http://kenwheeler.github.io/slick
     Repo: http://github.com/kenwheeler/slick
@@ -2039,11 +2038,6 @@
 
         if (_.options.slidesToShow === 1 && _.options.adaptiveHeight === true && _.options.vertical === false) {
             var targetHeight = _.$slides.eq(_.currentSlide).outerHeight(true);
-            _.$list.css('height', targetHeight);
-        }
-        // added by Hans ivm IE 11 bug height slider on home page (body.layout1)
-        else if($('body.layout1')[0]) {
-            var targetHeight = Math.ceil(_.listWidth / 2.25);
             _.$list.css('height', targetHeight);
         }
 
